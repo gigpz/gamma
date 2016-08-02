@@ -1,0 +1,289 @@
+/*@media screen and (-webkit-animation) {  
+    a {  
+        margin-bottom: -4px;  
+    }  
+}
+*/
+@media screen and (max-width: 600px){ /*condicion tamaño maximo*/
+  .busqueda{
+    width: 100%
+  }
+  /*.aside{
+    width: 100%
+  }*/
+}
+
+@media screen and (max-width: 600px){
+.form-group select{
+    width: 100%;
+  }
+}
+
+body{
+	/*width: 100%;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;*/
+	background:#55BDA6 url('../img/fondo.jpg') no-repeat center center fixed;
+	/*background-size:100% 100%;*/
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+li{
+    list-style-type: none;
+}
+.imglogo{
+    display: none;
+    /*float: left;*/
+}
+.banner{
+    width: 100%
+}
+.banner2 { position: relative; overflow: auto; }
+.banner2 li { list-style: none; }
+.banner2 ul li { float: left; }
+.banner2 img{}
+
+.redess{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: red;
+    color: white;
+    display: inline-block;
+    float: right;
+    width: 100%;
+}
+
+.banners{
+    background-color: #000;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+}
+.busqueda{
+
+  width: 100%;
+  height: auto;
+  line-height: auto;
+  padding: 4px;
+  margin: 0px;
+  border: 0px;
+  box-sizing: border-box;
+  display: inline-block;
+  background-color: #F5F5F5;
+  background: rgba(245,245,245, 0.6);
+  filter: alpha(opacity=60);
+  position: relative;
+  /*top: -100px;*/
+  z-index: 1;
+}
+.busqueda form select{
+  
+  /*background-color: white;*/
+}
+
+.form-group select{
+    
+    font-family: arial;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /*background: #092440 url(../img/arrowdown.png) top left scroll repeat;*/
+    border: 0; width: 100%;
+    background: URL(../img/arrowdown.png) no-repeat 180px 15px #fff !important;
+    /*background-position: 280px center;*/
+    background-repeat: no-repeat;
+    height: 38px; line-height: 40px;
+    padding: 2px;
+    border-radius: 0px;
+    /*-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.3);*/
+    /*-moz-box-shadow: 0 1px 2px rgba(0,0,0,0.3);*/
+    box-shadow: 5px 5px 5px #888888;
+    -moz-box-shadow: 5px 5px 5px #888888;
+    
+   -webkit-transition: background-color 0.4s;
+   -moz-transition: background-color 0.4s;
+   transition: background-color 0.4s;
+   
+    /*appearance: none;
+    border: 1px solid #ccc;
+    background: URL(../img/arrowdown.png) no-repeat 148px 10px #fff !important;
+    -moz-appearance: none;
+    -webkit-appearance: none;*/
+}
+select:hover{
+  background-color: #ddd;
+}
+
+/*.select {
+  border: 1px solid #ccc;
+  width: 140px;
+  overflow: hidden;
+  background: #fff url("arrowdown.gif") no-repeat 90% center;
+}
+  .select select {
+    padding: 5px 8px;
+    width: 130%;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    appearance: none;
+  }*/
+
+   /* .form-control {
+    margin : 20px auto 40px auto;
+    border : none;
+    height : 30px;
+    overflow : hidden;
+    width : 230px;
+    position : relative;
+    }
+    select {
+    background : transparent;
+    border : none;
+    font-size : 14px;
+    height : 30px;
+    padding : 5px;
+    width : 250px;
+    }
+    select:focus {
+    outline : none;
+    }
+    .form-control::after {
+    content : "\025be";
+    display : table-cell;
+    padding-top : 7px;
+    text-align : center;
+    width : 30px;
+    height : 30px;
+    background-color : #d9d9d9;
+    position : absolute;
+    top : 0;
+    right : 0px;
+    pointer-events : none;
+    }*/
+
+nav ul li a{
+           /* padding: 10px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            display: inline-block;
+            border-right: 30px solid transparent; */
+                /*display: block;*/
+                /*border-right: 30px solid red;*/
+            /*border-bottom: 30px solid #4c4c4c;
+            height: 0;
+            line-height: 50px;
+            cursor: pointer;*/
+        }
+
+/*nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+}
+nav li {
+  display: inline-block;
+  margin: 0 5px;
+  transition: all 0.3s;
+
+}
+nav a {
+  display: block;
+  color: #285064;
+  cursor: pointer;
+  transition: all 0.3s;
+  height: 95px;
+  line-height: 95px;
+}
+nav a:hover {
+  color: #12242d;
+  text-decoration: none;
+}
+nav span {
+  display: block;
+}
+
+@media all and (min-width: 690px) {
+  nav li {
+    margin: 0;
+    transform: skewX(-10deg);
+  }
+  nav a {
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #285064;
+    font-weight: bold;
+  }
+  nav a:hover {
+    color: #fff;
+    background-color: #12242d;
+  }
+  nav span {
+    transform: skewX(10deg);
+  }
+}*/
+
+.blog-main{}
+.blog-sidebar{ }
+
+.mytab{
+  background-color: #55BDA6;
+}
+.titulo{
+  color: red;
+  text-transform: capitalize;
+}
+
+.GzHeader{
+    box-shadow: 1px 1px 15px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 1px 1px 15px rgba(0,0,0,0.5);
+    -moz-box-shadow: 1px 1px 15px rgba(0,0,0,0.5);
+    -o-box-shadow: 1px 1px 15px rgba(0,0,0,0.5);
+}
+
+form input.GzInput{
+    background-color: #E4E5D7;
+    transition: background-color 1s ease-in-out;
+    -webkit-transition: background-color 1s ease-in-out;
+    -moz-transition: background-color 1s ease-in-out;
+    -o-transition: background-color 1s ease-in-out;
+}
+
+.resultados{
+  text-align: justify;
+}
+.resultados:hover{
+  background-color: #ddd;
+  transition: background-color 1s ease-in-out;
+  -webkit-transition: background-color 1s ease-in-out;
+  -moz-transition: background-color 1s ease-in-out;
+  -o-transition: background-color 1s ease-in-out; 
+}
+
+form input.GzInput:hover{background-color: #fff; /*outline: 1px solid #4682B4;*/ }
+.form-group select{
+    cursor: pointer;
+}
+
+.bar {
+    height: 18px;
+    background: green;
+}
+
+#selector{cursor: pointer;}
+
+.banner-squared{
+    
+    height: 350px;
+}
+
+.myForm select{
+    /*border-radius: 10px;*/
+}

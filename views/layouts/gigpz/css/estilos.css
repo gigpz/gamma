@@ -1,0 +1,67 @@
+/*#contenedor{
+	background-image: url('http://localhost/betha/views/layout/Gigpz/img/img12.jpg');
+	background-color: #ccc;
+	min-height: 500px;
+	background-attachment: fixed;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}*/
+#contenedor{
+	/*background-color: #ccc;*/
+	/*max-width: 1280px;*/
+}
+.draggable { z-index: 1000; }
+.droppable { width: 100%; height: 500px; }
+
+/*#tab31{background-color: #fff}*/
+
+.box{
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.22);
+}
+.column-color1 > .caption{background: #3276B1; color: #fff;}
+.column-color2 > .caption{background: #768F34; color: #fff;}
+.column-color3 > .caption{background: #725D1E; color: #fff;}
+.column-color4 > .caption{background: #B52629; color: #fff;}
+.column-color5 > .caption{background: #EBE8C9; color: #000;}
+
+.menuOp{
+	position: fixed;
+	left: -40px;
+	top: 200px;
+	z-index: 3000;
+}
+.menuOp ul{
+	list-style: none;
+}
+.menuOp ul li a{
+	display: inline-block;
+	color: #fff;
+	background: #000;
+	height: 50px;
+	padding: 20px 15px;
+	text-decoration: none;
+	-webkit-transition:all 500ms ease;
+	-moz-transition:all 500ms ease;
+	-o-transition:all 500ms ease
+	-transition:all 500ms ease;
+}
+
+.menuOp ul li .icon-twitter{background: #00abf0}
+.menuOp ul li .icon-google-plus{background: #d95232}
+.menuOp ul li .icon-pinterest{background: #ae181f}
+/*.menuOp ul li .icon-mail{background: #666666}*/
+.menuOp ul li .glyphicon-plus-sign{background: #3276B1}
+.menuOp ul li .glyphicon-trash{background: #666666}
+
+.menuOp ul li a:hover{
+	padding: 20px 30px;
+	background: #000;
+	
+}
+
+.activeComlumn{z-index: 2999;}
+.disabled{z-index: 1}
+.fuente{
+	font-family: 'Arizonia', cursive;
+}

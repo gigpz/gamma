@@ -1,0 +1,12 @@
+<div class="slider-wrapper">
+	            <div id="slider" class="nivoSlider">
+	                <img src="<?php echo gigpzModel::URL();?>views/layouts/<?php echo DEFAULT_LAYOUT; ?>/img/img14.jpg" class="img-responsive" alt="Banner 1" title=""> <!--#htmlcaption-->
+	                <img src="<?php echo gigpzModel::URL();?>views/layouts/<?php echo DEFAULT_LAYOUT; ?>/img/img15.jpg" class="img-responsive" alt="Banner 2" title="">
+	                <a href="http://www.gigpz.com">
+	                  <img src="<?php echo gigpzModel::URL();?>views/layouts/<?php echo DEFAULT_LAYOUT; ?>/img/img16.jpg" class="img-responsive" alt="Banner 3" alt="" title="" />
+	                </a>
+	           </div>
+	          </div>
+	          <div id="htmlcaption" class="nivo-html-caption">
+	            <em>Tu Oportunidad Esta Aqui !</em>
+	          </div>

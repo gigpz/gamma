@@ -1,0 +1,56 @@
+<?php
+$Fichero = "log.txt"; //nombre del fichero donde guardamos los informes 
+$host = $_SERVER["HTTP_HOST"]; 
+$ip = $_SERVER["REMOTE_ADDR"]; //guarda en la variable el ip
+$rHost = $_SERVER["REMOTE_HOST"]; //host desde donde se visualiza
+$rPort = $_SERVER["REMOTE_PORT"]; //puerto usado por el usuario
+$fecha = date("Y-m-d;h:i:s"); //fecha y hora (por lo general del servidor) 
+$sistema = $_SERVER['HTTP_USER_AGENT']; //esto nos genera varios datos del navegador y del sistema operativo 
+$conproxy = $_SERVER["HTTP_X_FORWARDED_FOR"]; //en caso de usar proxy para esconderse aqui estaria el ip real 
+$log = "FECHA: $fecha SISTEMA: $sistema IP: $ip IPPROXY: $conproxyn HOST: $host HOST REMOTO: $rHost PURTO REMOTO: $rPort \n";
+$fp = fopen($Fichero, "a" );
+fwrite($fp, $log);
+fclose($fp);
+
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Probando Ando !</title>
+	
+</head>
+<body>
+	<h2>
+	<?php
+		echo "Hola Mundo";
+	?>
+	</h2>
+	<div id="bloque"></div>
+	<!--<button onclick="refrescarUbicacion()">Refrescar</button>-->
+	<script type="text/javascript">
+		var maxima;
+		maxima= Math.max(5,20,10,3);
+		document.write(maxima);
+
+		function mostrar(pos){
+			document.write(pos.coords.latitude + " , "+pos.coords.longitude);
+		}
+		navigator.geolocation.getCurrentPosition(mostrar);
+
+		/*var bloc = document.getElementById("bloque");
+		navigator.geolocation.getCurrentPosition(showPosition); 
+		function showPosition(position)
+		{
+			bloc.innerHTML = "Latitud: " + position.coords.latitude + "<br>Longitud: " + position.coords.longitude;
+		}
+
+		function refrescarUbicacion()
+		{	
+			navigator.geolocation.watchPosition(showPosition);
+		}*/
+		//AIzaSyDPrNIdAIzGJ8M2CI6L_gR7Aza_a9u5RHE
+	</script>
+
+</body>
+</html>
+

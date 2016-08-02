@@ -1,0 +1,97 @@
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Gz</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <!--<form class="navbar-form navbar-right" role="form">
+            <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control GzInput">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control GzInput">
+            </div>
+            <button type="submit" class="btn btn-success">Acceder</button>
+          </form>-->
+        </div><!--/.navbar-collapse -->
+      </div>
+</div>
+<!--<div class="jumbotron">-->
+      <!--<div class="container">
+        <h1>Hello, world!</h1>
+        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+        <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
+      </div>-->
+<!--</div>-->
+<section class="container">
+	<header class="row">
+		<hr><br>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 thumbnail GzHeader">
+        	
+        	<!--<img src="<php echo $_layoutRutas['ruta_img'];?>banner.jpg" class="img-responsive" alt="Banner 1" title="#htmlcaption">-->
+	          <div class="slider-wrapper">
+	            <div id="slider" class="nivoSlider">
+	                <img src="<?php echo $_layoutRutas['ruta_img'];?>banner1.jpg" class="img-responsive" alt="Banner 1" title="">
+	                <img src="<?php echo $_layoutRutas['ruta_img'];?>banner2.jpg" class="img-responsive" alt="Banner 2" title="">
+	                <a href="http://www.gigpz.com">
+	                <img src="<?php echo $_layoutRutas['ruta_img'];?>banner3.jpg" class="img-responsive" alt="Banner 3" alt="" title="" />
+	                </a>
+	                <!--<img src="<php echo $_layoutRutas['ruta_img'];?>banner.jpg" class="img-responsive" alt="Banner 4" title="">-->
+	           </div>
+	          </div>
+	          <!--<div id="htmlcaption" class="nivo-html-caption">
+	            <em>Chamba para chincha tus oportunidades aqui !</em>
+	          </div>-->
+	          
+	    </div>
+	</header>
+
+
+	<article class="row">
+		<div class="row">
+
+	        <div class="col-md-8">
+	          <div class="row">
+	          	<article class="col-md-6">
+		          	<h2>Web</h2>
+			          <p class="well well-lg gz-well">
+			          	Nuestra web trata de colaborar con el desarrollo informático en este nuevo medio de información, tratando de aportar con nuestro granito de arena en este mundo tan competitivo y exigente. Aclarando que no somos expertos desarrolladores pero que cada día lo aprendido se muestra aquí.
+			          </p>
+			          
+	          	</article>
+	          	<article class="col-md-6">
+	          		<h2>Tutorial y Descarga</h2>
+			          <p class="well well-lg">
+			          	Tutorial numero 12 de nuestro álbum web donde terminamos la parte de programación de nuestra aplicación. En esta ocasión por motivo de tiempo no se ha realizado paso a paso, pues por tiempo se ha desarrollado hasta el final y se explica detalladamente en este vídeo disculpen los inconvenientes pero era necesario para terminar pronto y seguir con nuestros cursos de Node.js. Cualquier consulta dejen sus comentarios por una de las redes sociales. dejo todos los archivos para su descarga en mi web www.gigpz.com.
+			          	<br><br>
+			          	<iframe width="320" height="215" src="//www.youtube.com/embed/QaL-cV64XDk" frameborder="0" allowfullscreen></iframe>
+			          </p>
+			          <p>
+			          	<a class="btn btn-default" href="<?php echo BASE_URL.'views/layout/'.DEFAULT_LAYOUT.'/upload/albumweb.rar'?>" role="button">Descargar !</a>
+			          </p>
+	          	</article>
+	          </div>	
+	          
+	        </div>
+
+	        <div class="col-md-4">
+	          <h2>Red Social</h2>
+	          	<div class="fb-like-box" data-href="http://www.facebook.com/cristhianGigpz?ref=hl" data-width="100%" data-show-faces="true" data-stream="true" data-header="true" >
+				</div>
+	          <p><a class="btn btn-default" href="#" role="button">Ver m&aacute;s &raquo;</a></p>
+	        </div>
+	    </div>
+
+	    <hr>
+
+	    <footer>
+	        <p>&copy; Chamba para Chincha 2014 | hola mundo ! <?php echo $this->titulo;?></p>
+	    </footer>
+	</article>
+</section>

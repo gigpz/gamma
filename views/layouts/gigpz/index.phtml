@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>..::Gz::..</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="<?php echo gigpzModel::URL();?>public/img/favicon.png" />
+<!--<link rel="shortcut icon" href="<php echo gigpzModel::URL();?>/public/img/favicon.ico" />-->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"> <!--NO ZOOM-->
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="expires" content="-1" />
+<link href="http://fonts.googleapis.com/css?family=Arizonia" rel="stylesheet" type="text/css">
+
+<!--<link href="<php echo gigpzModel::URL();?>public/css/bootstrap.min.css" rel="stylesheet">-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<link href="<?php echo gigpzModel::URL();?>public/css/ui/jquery-ui.css" rel="stylesheet">
+
+<link href="<?php echo gigpzModel::URL();?>public/css/docs.min.css" rel="stylesheet">
+<link href="<?php echo gigpzModel::URL();?>public/css/nivo-slider.css" rel="stylesheet" type="text/css" />
+
+<link href="<?php echo gigpzModel::URL();?>views/layouts/gigpz/css/estilos.css" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--<link href="<php echo gigpzModel::URL();?>views/layouts/gigpz/css/estilos.less" rel="stylesheet/less" type="text/css"/>-->
+<!--<link href="public/css/carousel.css" rel="stylesheet">-->
+</head>
+<body>
+	<!--like box-->
+	<!--<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>-->
+	<!--facebook-->
+	<div class="menuOp">
+		<ul>
+			<li id="addContenido" name="addContenido"><a href="#" role="button" data-toggle="modal" data-target="#myModal" class="glyphicon glyphicon-plus-sign" aria-hidden="true" title="Nueva Columna"></a></li>
+			<li><a id="droppable" class="glyphicon glyphicon-trash" aria-hidden="true" title="Eliminar !"></a></li>
+			<!--<li><i class="material-icons md-24">delete</i></li>-->
+			<!--explorer <i class="material-icons">&#xE87C;</i>-->
+		</ul>
+	</div>
+	
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><?php echo APP_COMPANY;?></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <!--<ul class="nav navbar-nav navbar-right">
+            <li><a href="#">El Mundo</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Configuracion</a></li>
+            <li><a href="#">Salir</a></li>
+          </ul>-->
+          <!--<form class="navbar-form navbar-right">
+          	<div class="input-group">
+            <input type="text" class="form-control input-sm" placeholder="...">
+        	</div>
+          </form>-->
+        </div>
+      </div>
+    </nav>
+    <br><br><br>
+	<div class="container-fluid" id="contenedor"> <!--abarca el 100%-->
+		<div class="col-xs-12 col-sm-6 col-md-2" id="columna1"><!--Columna-->
+			<!--Elemento de Columna-->
+			<div class="thumbnail draggable" id="colum11" onmouseover="activo(this);" onmouseout="nOactivo(this);" attr="">
+		      <img src="<?php echo gigpzModel::URL();?>views/layouts/<?php echo DEFAULT_LAYOUT; ?>/img/img13.jpg" alt="...">
+		      <div class="caption">
+		        <h3>Thumbnail label</h3>
+		        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		        </p>
+		        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+		      </div>
+		    </div>
+		</div>
+
+		<div class="col-xs-12 col-sm-6 col-md-5" id="columna2">
+		  <!--Elemento de Columna-->
+		 <div class="row draggable" id="portadas21" onmouseover="activo(this);" onmouseout="nOactivo(this);" attr="">
+		  	<div class="col-12 col-sm-12 col-lg-12 ">
+	          <h1 class="fuente">Cristhian Joel Acevedo Tipian</h1>
+	        </div>
+		 </div> <!--fin row--><br />
+		 <!-- ***************************************************************************************************************** -->
+		 <!--<div class="row" id="columna2-3">-->
+		 	<!--Elemento de Columna-->
+		 	<div class="panel-group draggable" id="accordion21" role="tablist" aria-multiselectable="true" onmouseover="activo(this);" onmouseout="nOactivo(this);" attr="">
+			  <div class="panel panel-default">
+			    <div class="panel-heading" role="tab" id="headingOne">
+			      <h4 class="panel-title">
+			        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+			          Collapsible Group Item #1
+			        </a>	
+			      </h4>
+			    </div>
+			    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+			      <div class="panel-body">
+			        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+			      </div>
+			    </div>
+			  </div>
+			  <div class="panel panel-default">
+			    <div class="panel-heading" role="tab" id="headingTwo">
+			      <h4 class="panel-title">
+			        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+			          Collapsible Group Item #2
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+			      <div class="panel-body">
+			        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+			      </div>
+			    </div>
+			  </div>
+			  <div class="panel panel-default">
+			    <div class="panel-heading" role="tab" id="headingThree">
+			      <h4 class="panel-title">
+			        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+			          Collapsible Group Item #3
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+			      <div class="panel-body">
+			        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+			      </div>
+			    </div>
+			  </div>
+			</div>
+		 <!--</div>-->
+		 <!-- ***************************************************************************************************************** -->
+		 
+		  <!--<div class="row" id="columna2-2">-->
+		  	<!--subcolumna Elemento de Columna-->
+		 	<div class="col-xs-12 col-sm-6 col-md-6 draggable" id="column21" onmouseover="activo(this);" onmouseout="nOactivo(this);" attr="">
+				<div class="thumbnail">
+			      <img src="<?php echo gigpzModel::URL();?>views/layouts/<?php echo DEFAULT_LAYOUT; ?>/img/img7.jpg" alt="...">
+			      <div class="caption">
+			        <h3>Thumbnail label</h3>
+			        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			        consequat.</p>
+			        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+			      </div>
+			    </div>
+			</div>
+			<!--subcolumna Elemento de Columna-->
+			<div class="col-xs-12 col-sm-6 col-md-5 draggable" id="column22" onmouseover="activo(this);" onmouseout="nOactivo(this);" attr="">
+				<div class="thumbnail">
+			      <img src="<?php echo gigpzModel::URL();?>views/layouts/<?php echo DEFAULT_LAYOUT; ?>/img/img6.jpg" alt="...">
+			      <div class="caption">
+			        <h3>Thumbnail label</h3>
+			        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			        consequat.</p>
+			        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+			      </div>
+			    </div>
+			</div>
+		 <!--</div>-->
+		 
+		</div> <!-- fin columna 2-->
+
+		<div class="col-xs-12 col-sm-6 col-md-3" id="columna3"> <!-- col-md-offset-3 -->
+			<!--Elemento de Columna-->
+          	<div class="draggable" id="tab31" onmouseover="activo(this);" onmouseout="nOactivo(this);" attr="">
+			  <!-- Nav tabs -->
+			  <ul class="nav nav-tabs" role="tablist">
+			    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+			    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+			    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+			  </ul>
+			  <!-- Tab panes -->
+			  <div class="tab-content">
+			    <div role="tabpanel" class="tab-pane active" id="home">
+			    	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			    	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			    	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			    	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			    	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			    </div>
+			    <div role="tabpanel" class="tab-pane" id="profile">
+			    	2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			    	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			    	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			    	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			    	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			    </div>
+			    <div role="tabpanel" class="tab-pane" id="messages">
+			    	3 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			    	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			    	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			    	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			    	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			    </div>
+			    
+			  </div>
+
+			</div><br>
+			<!--Elemento de Columna-->
+			<!--<div class="fb-like-box" data-href="http://www.facebook.com/cristhianGigpz?ref=hl" data-width="100%" data-show-faces="true" data-stream="true" data-header="true" >
+			</div><br><br>-->
+			<!--Elemento de Columna-->
+			<div class="thumbnail draggable" id="colum31" onmouseover="activo(this);" onmouseout="nOactivo(this);" attr="">
+			  <img src="<?php echo gigpzModel::URL();?>views/layouts/<?php echo DEFAULT_LAYOUT; ?>/img/img3.jpg" alt="...">
+		      <div class="caption">
+		      	<h3>Thumbnail label</h3>
+		        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		        </p>
+		        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+		      </div>
+		    </div>
+		    <!--Elemento de Columna-->
+		    <div class="thumbnail draggable" id="colum32" onmouseover="activo(this);" onmouseout="nOactivo(this);" attr="">
+			  <img src="<?php echo gigpzModel::URL();?>views/layouts/<?php echo DEFAULT_LAYOUT; ?>/img/img4.jpg" alt="...">
+		      <div class="caption">
+		      	<h3>Thumbnail label</h3>
+		        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		        </p>
+		        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+		      </div>
+		    </div>
+		    <!--*************************************************************************************************-->
+		    
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-2" id="columna4">
+        	<!--Elemento de Columna-->
+			<div class="thumbnail draggable" id="colum41" onmouseover="activo(this);" onmouseout="nOactivo(this);" attr="">
+			  <img src="<?php echo gigpzModel::URL();?>views/layouts/<?php echo DEFAULT_LAYOUT; ?>/img/img5.jpg" alt="...">
+		      <div class="caption">
+		      	<h3>Thumbnail label</h3>
+		        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		        </p>
+		        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+		      </div>
+		    </div>
+        </div>
+
+	</div> <!--fin contenedor-->
+	<footer>
+		<div class="container-fluid">
+			<h4><span class="icon-twitter3" title="twitter"></span><span class="icon-facebook3" title="facebook"></span><span class="icon-youtube3" title="youtube"></span></h4>
+			<h5>Copyright &copy; 2015 - www.gigpz.com</h5>
+		</div>
+	</footer>
+	<script type="text/javascript"></script>
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+	<!--<script src="<php echo gigpzModel::URL();?>public/js/jquery.js"></script>-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<!--<script src="<php echo gigpzModel::URL();?>public/js/bootstrap.min.js"></script>-->
+	<script src="<?php echo gigpzModel::URL();?>public/js/ie10-viewport-bug-workaround.js"></script>
+	<script src="<?php echo gigpzModel::URL();?>public/js/unslider.min.js"></script>
+	<script src="<?php echo gigpzModel::URL();?>public/js/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+	<script src="<?php echo gigpzModel::URL();?>public/js/ui/jquery-ui.js"></script>
+	<script src="<?php echo gigpzModel::URL();?>public/js/ie-emulation-modes-warning.js"></script>
+	
+	<script src="<?php echo gigpzModel::URL();?>public/js/md5.js"></script>
+	<script src="<?php echo gigpzModel::URL();?>views/layouts/gigpz/js/funciones.js"></script>
+	<script src="<?php echo gigpzModel::URL();?>views/layouts/gigpz/js/objeto.js"></script>
+	<script src="<?php echo gigpzModel::URL();?>views/layouts/gigpz/js/jquery.lettering.js"></script>
+	<script type="text/javascript">
+    $(document).ready(function() {
+        //limpiarForms();
+        //ejemplo1: aplicar color a la primer letra de cada palabra
+		$(".fuente").lettering().children("span.char5, span.char1, span.char11").css({'color':'crimson'});
+    });
+
+    $(window).load(function() {
+    		$('#slider').nivoSlider({
+    			 	effect: 'random',                 // Specify sets like: 'fold,fade,sliceDown'
+				    slices: 15,                     // For slice animations
+				    boxCols: 8,                     // For box animations
+				    boxRows: 4,                     // For box animations
+				    animSpeed: 500,                 // Slide transition speed
+				    pauseTime: 3000,                 // How long each slide will show
+				    startSlide: 0,                     // Set starting Slide (0 index)
+				    directionNav: false,             // Next & Prev navigation
+				    controlNav: false,                 // 1,2,3... navigation
+				    controlNavThumbs: false,         // Use thumbnails for Control Nav
+				    pauseOnHover: true,             // Stop animation while hovering
+				    manualAdvance: false,             // Force manual transitions
+				    prevText: '',                 // Prev directionNav text
+				    nextText: '',                 // Next directionNav text
+				    randomStart: false,             // Start on a random slide
+				    beforeChange: function(){},     // Triggers before a slide transition
+				    afterChange: function(){},         // Triggers after a slide transition
+				    slideshowEnd: function(){},     // Triggers after all slides have been shown
+				    lastSlide: function(){},         // Triggers when last slide is shown
+				    afterLoad: function(){}         // Triggers when slider has loaded
+    		});
+	});
+
+	$(function() {
+		   $(".draggable").draggable({
+		   	revert: true,
+		   	scroll: true,
+		   	cursor: "move"
+		   });		   
+		   $("#droppable").droppable({
+		   		accept: ".draggable",
+				//tolerance: "touch",
+				tolerance: "pointer",
+		     	drop: function( event, ui ) {
+		     	//alert("Eliminar Columna1.0");
+		        //$("#"+_columActivo).draggable("destroy");
+		        idcol = $("#"+_columActivo).attr("attr");
+		        $("#"+_columActivo).remove();
+		        eliminarColumna(idcol);
+		      }
+		    });
+		    //$(".draggable").draggable();
+		    /*$(".droppable").droppable({
+		      drop: function( event, ui ) {
+		        $(this).addClass("droppable").find("p").html("Dropped!");
+		      }
+		    });*/
+	});
+  	</script>
+</body>
+</html>
